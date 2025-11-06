@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project Hub — Game Launcher</title>
+  <style>
+    :root{--bg:#0b1220;--card:#0f1724;--accent:#7dd3fc;--muted:#9fb0c3;--ink:#e6eef6}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071428 0%, #04101a 100%);color:var(--ink)}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;padding:48px 20px}
+    header{max-width:980px;width:100%;display:flex;align-items:center;gap:16px;margin-bottom:28px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#a78bfa);display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:0 6px 18px rgba(15,23,42,.6)}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:0;color:var(--muted)}
+
+    main{width:100%;max-width:980px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    a.card{display:block;padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.04);text-decoration:none;color:inherit;transition:transform .16s ease,box-shadow .16s ease}
+    a.card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(2,6,23,.6)}
+    .card h3{margin:0 0 8px 0;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+    .meta{margin-top:12px;font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block}
+
+    footer{width:100%;max-width:980px;margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:420px){header{flex-direction:column;align-items:flex-start} .logo{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">GH</div>
+      <div>
+        <h1>Project Hub — My Web Games</h1>
+        <p class="lead">Quick links to your prototypes — open any project in a new tab.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="grid">
+
+        <a class="card" href="https://kdiamondosu-glitch.github.io/Custom-Guess-Who/" target="_blank" rel="noopener noreferrer">
+          <h3>Custom Guess Who</h3>
+          <p>Community packs & silhouette quiz — build and play custom Guess Who sets.</p>
+          <div class="meta"><span class="dot"></span><span>kdiamondosu‑glitch</span></div>
+        </a>
+
+        <a class="card" href="https://professorp7.github.io/Custom-Guitar-Hero/" target="_blank" rel="noopener noreferrer">
+          <h3>Custom Guitar Hero</h3>
+          <p>Upload songs and jam — rhythm game inspired by Deltarune & Guitar Hero.</p>
+          <div class="meta"><span class="dot"></span><span>professorp7</span></div>
+        </a>
+
+        <a class="card" href="https://professorp7.github.io/Make-The-Game/" target="_blank" rel="noopener noreferrer">
+          <h3>Make The Game</h3>
+          <p>Game creation toolkit — prototype rules, boards and mechanics in-browser.</p>
+          <div class="meta"><span class="dot"></span><span>professorp7</span></div>
+        </a>
+
+        <a class="card" href="https://professorp7.github.io/Custom-Jeopardy/" target="_blank" rel="noopener noreferrer">
+          <h3>Custom Jeopardy</h3>
+          <p>Create and run your own Jeopardy boards — ideal for shows and quizzes.</p>
+          <div class="meta"><span class="dot"></span><span>professorp7</span></div>
+        </a>
+
+        <a class="card" href="https://professorp7.github.io/Whos-that-pokemon/" target="_blank" rel="noopener noreferrer">
+          <h3>Who's That Pokémon?</h3>
+          <p>Silhouette quiz for Pokémon — quick rounds, high replay value.</p>
+          <div class="meta"><span class="dot"></span><span>professorp7</span></div>
+        </a>
+
+      </div>
+
+      <footer>
+        Open any link to launch the project in a new tab. Want icons, keyboard shortcuts, or a downloadable ZIP? Say the word.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
